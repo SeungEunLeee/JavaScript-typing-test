@@ -1,0 +1,142 @@
+@import url('https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: lightblue;
+    /* letter-spacing: px; */
+
+    /* 드래그방지 */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 20px;
+    font-family: 'Galmuri9';
+    margin-bottom: 20px;
+    text-shadow: rgb(253, 125, 125) 2px 2px 3px;
+    color: white;
+}
+
+.header {
+    display: flex;
+}
+
+.timer,
+.errors,
+.accuracy,
+.cpm,
+.wpm {
+    background-color: lightcoral;
+    height: 60px;
+    width: 70px;
+    margin: 6px;
+    padding: 15px 25px;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: rgb(163, 163, 163) 2px 2px 3px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.cpm,
+.wpm {
+    display: none;
+}
+
+.header_text {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.curr_time,
+.curr_errors,
+.curr_accuracy,
+.curr_cpm,
+.curr_wpm {
+    font-size: 36px;
+}
+
+.quote {
+    background-color: white;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 15px 30px;
+    border: 3px solid lightcoral;
+    border-radius: 10px;
+    box-shadow: rgb(163, 163, 163) 2px 2px 3px;
+    font-size: 18px;
+    font-family: 'Galmuri11';
+}
+
+
+.input_area {
+    border-radius: 4px;
+    background-color: white;
+    height: 80px;
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px;
+    padding: 20px;
+    border: 0px;
+    box-shadow: rgb(163, 163, 163) 2px 2px 3px;
+    font-size: 18px;
+}
+
+.input_area:focus {
+    box-shadow: 0 0 0 2px lightcoral inset;
+    outline: 0;
+    
+}
+
+.input_area::placeholder {
+    font-size: 16px;
+    font-family: 'Galmuri14';
+}
+
+.restart_btn {
+    display: none;
+    background-color: rgb(253, 138, 138);
+    font-size: 18px;
+    padding: 10px 20px ;
+    border: 0px;
+    box-shadow: rgb(163, 163, 163) 2px 2px 3px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Galmuri11';
+    color: white;
+}
+
+
+.restart_btn:hover{
+    background-color: lightcoral;
+}
+
+.incorrect_char {
+    color: red;
+    text-decoration: underline;
+}
+
+.correct_char {
+    color: rgb(98, 194, 226);
+}
